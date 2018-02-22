@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BDC19606203EB91100865AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC19605203EB91100865AB9 /* AppDelegate.swift */; };
-		BDC19608203EB91100865AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC19607203EB91100865AB9 /* ViewController.swift */; };
 		BDC1960B203EB91100865AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC19609203EB91100865AB9 /* Main.storyboard */; };
 		BDC1960D203EB91100865AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC1960C203EB91100865AB9 /* Assets.xcassets */; };
 		BDC19610203EB91100865AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC1960E203EB91100865AB9 /* LaunchScreen.storyboard */; };
+		BDC19619203EB94A00865AB9 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC19618203EB94A00865AB9 /* SketchViewController.swift */; };
+		BDC1961C203EB96F00865AB9 /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1961B203EB96F00865AB9 /* SketchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDC19602203EB91100865AB9 /* ForceSketch-Refactoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ForceSketch-Refactoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC19605203EB91100865AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDC19607203EB91100865AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDC1960A203EB91100865AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDC1960C203EB91100865AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC1960F203EB91100865AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC19611203EB91100865AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC19618203EB94A00865AB9 /* SketchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		BDC1961B203EB96F00865AB9 /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		BDC19604203EB91100865AB9 /* ForceSketch-Refactoring */ = {
 			isa = PBXGroup;
 			children = (
+				BDC1961A203EB95000865AB9 /* Views */,
+				BDC19617203EB91D00865AB9 /* ViewControllers */,
 				BDC19605203EB91100865AB9 /* AppDelegate.swift */,
-				BDC19607203EB91100865AB9 /* ViewController.swift */,
 				BDC19609203EB91100865AB9 /* Main.storyboard */,
 				BDC1960C203EB91100865AB9 /* Assets.xcassets */,
 				BDC1960E203EB91100865AB9 /* LaunchScreen.storyboard */,
 				BDC19611203EB91100865AB9 /* Info.plist */,
 			);
 			path = "ForceSketch-Refactoring";
+			sourceTree = "<group>";
+		};
+		BDC19617203EB91D00865AB9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDC19618203EB94A00865AB9 /* SketchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BDC1961A203EB95000865AB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDC1961B203EB96F00865AB9 /* SketchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC19608203EB91100865AB9 /* ViewController.swift in Sources */,
+				BDC1961C203EB96F00865AB9 /* SketchView.swift in Sources */,
+				BDC19619203EB94A00865AB9 /* SketchViewController.swift in Sources */,
 				BDC19606203EB91100865AB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
